@@ -1,6 +1,6 @@
 #include <Novice.h>
 
-const char kWindowTitle[] = "学籍番号";
+const char kWindowTitle[] = "PG3_03_01";
 
 // Windowsアプリでのエントリーポイント(main関数)
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
@@ -25,6 +25,8 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		/// ↓更新処理ここから
 		///
 
+
+
 		///
 		/// ↑更新処理ここまで
 		///
@@ -32,6 +34,8 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		///
 		/// ↓描画処理ここから
 		///
+
+
 
 		///
 		/// ↑描画処理ここまで
