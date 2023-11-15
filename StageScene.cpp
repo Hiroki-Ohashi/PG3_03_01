@@ -18,22 +18,6 @@ void StageScene::Update()
 	   プレイヤー
 	---------------*/
 
-	// Dキーを押すと右へ移動し、画面端で静止
-	if (keys[DIK_D]) {
-		if (playerPosX >= 1260) {
-			playerSpeed = 0;
-		}
-		playerPosX += playerSpeed;
-	}
-
-	// Aキーを押すと左へ移動し、画面端で静止
-	if (keys[DIK_A]) {
-		if (playerPosX <= 20) {
-			playerSpeed = 0;
-		}
-		playerPosX -= playerSpeed;
-	}
-
 	// Wキーを押すと上へ移動し、画面端で静止
 	if (keys[DIK_W]) {
 		if (playerPosY <= 20) {
@@ -48,6 +32,22 @@ void StageScene::Update()
 			playerSpeed = 0;
 		}
 		playerPosY += playerSpeed;
+	}
+
+	// Dキーを押すと右へ移動し、画面端で静止
+	if (keys[DIK_D]) {
+		if (playerPosX >= 1260) {
+			playerSpeed = 0;
+		}
+		playerPosX += playerSpeed;
+	}
+
+	// Aキーを押すと左へ移動し、画面端で静止
+	if (keys[DIK_A]) {
+		if (playerPosX <= 20) {
+			playerSpeed = 0;
+		}
+		playerPosX -= playerSpeed;
 	}
 
 	/*---------------
